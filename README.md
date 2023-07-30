@@ -11,4 +11,3 @@ Welcome to the ChatBot for CSV Data Analysis! This intelligent chatbot is design
 3. **SQL Data Modification:** Not only can the ChatBot retrieve data, but it can also modify the data using SQL queries. Whether you need to update, delete, or insert new records, the ChatBot can handle it efficiently.
 
 4. **Large CSV File Support:** The ChatBot is optimized to work with large CSV files containing vast amounts of data. It handles data processing swiftly, ensuring you get the information you need without delays.
-
