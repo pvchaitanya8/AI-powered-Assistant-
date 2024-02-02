@@ -1,4 +1,4 @@
-# Chatbot Fusion Project
+# AI-powered Assistant
 
 This project combines two chatbot functionalities: CSV Chatbot and TXT Chatbot. The CSV Chatbot analyzes data from CSV files, while the TXT Chatbot processes information from text files.
 
