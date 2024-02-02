@@ -1,13 +1,48 @@
-# ChatBot for CSV Data Analysis
+# Chatbot Fusion Project
 
-Welcome to the ChatBot for CSV Data Analysis! This intelligent chatbot is designed to interact with large CSV files, providing you with insightful answers to generalized queries and empowering you to modify the data using SQL queries. Whether you need to extract specific information, perform data analysis, or gain valuable insights from your CSV data, this ChatBot is at your service.
+This project combines two chatbot functionalities: CSV Chatbot and TXT Chatbot. The CSV Chatbot analyzes data from CSV files, while the TXT Chatbot processes information from text files.
 
-## Features
+## Requirements
 
-1. **Generalized Queries:** The ChatBot is equipped to handle a wide range of generalized queries related to your CSV data. Whether it's about specific records, summary statistics, or any other data-related question, the ChatBot can provide prompt and accurate responses.
+Ensure you have the required packages installed before running the project:
 
-2. **Insightful Answers:** Utilizing its understanding of the data within the CSV files, the ChatBot can offer insightful answers that go beyond simple data retrieval. It can analyze patterns, trends, and correlations to provide you with meaningful insights.
+```bash
+%pip install langchain openai tabulate llama-index
+```
 
-3. **SQL Data Modification:** Not only can the ChatBot retrieve data, but it can also modify the data using SQL queries. Whether you need to update, delete, or insert new records, the ChatBot can handle it efficiently.
+## Setup
 
-4. **Large CSV File Support:** The ChatBot is optimized to work with large CSV files containing vast amounts of data. It handles data processing swiftly, ensuring you get the information you need without delays.
+1. Obtain OpenAI API Key: Replace the placeholder `*********************************` in the code with your actual OpenAI API key.
+
+2. Prepare CSV Data: Ensure you have a CSV file named `data.csv` in the `knowledge` folder for the CSV Chatbot.
+
+3. Prepare TXT Data: Place your text documents in the `Knowledge` folder for the TXT Chatbot.
+
+## Running the Project
+
+Execute the combined project script:
+
+```bash
+python combined_chatbot.py
+```
+
+### User Options
+
+1. **Ask Question (Option 1):** Enter a question, and the combined chatbot will provide responses from both CSV and TXT chatbots.
+
+2. **Stop (Option 0):** Terminate the program.
+
+## CSV Chatbot Functionality
+
+- Analyzes questions based on data stored in a CSV file (`knowledge/data.csv`).
+- Updates CSV data in SQLite database after each interaction.
+
+## TXT Chatbot Functionality
+
+- Processes questions using a GPT-based model (OpenAI's text-ada-001) on text documents in the `Knowledge` folder.
+- Utilizes a GPTVectorStoreIndex for efficient query handling.
+
+## Note
+
+- Adjust file paths, OpenAI API key, and other parameters as needed.
+- Ensure proper data files and folders are in place before running.
